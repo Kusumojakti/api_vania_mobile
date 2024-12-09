@@ -8,7 +8,7 @@ class CreateOrderitemsTable extends Migration {
       integer('order_item', length: 11, unique: true);
       primary('order_item');
       integer('order_num', length: 11);
-      string('prod_id', length: 10);
+      char('prod_id', length: 5);
       integer('quantity', length: 11);
       integer('size', length: 11);
       timeStamps();
